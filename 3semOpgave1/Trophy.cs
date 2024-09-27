@@ -46,7 +46,6 @@ namespace _3semOpgave1
                 throw new ArgumentOutOfRangeException("This is not a valid year. This year hasnt happened yet, are you a time traveler?");
             }
             return true;
-            
         }
         public bool ValidateAll()
         {
@@ -54,7 +53,6 @@ namespace _3semOpgave1
             {
                 throw new Exception("This Trophy is invalid");
             }
-
             return true;
         }
 
@@ -62,6 +60,7 @@ namespace _3semOpgave1
         {
             return $"This Trophy was won in {Year}, in the competition {Competition}. It's unique Id is {Id}";
         }
+
         /*
 
         Tilføj en unit test til dit projekt.
