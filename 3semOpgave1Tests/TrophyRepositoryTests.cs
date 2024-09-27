@@ -88,9 +88,8 @@ namespace _3semOpgave1.Tests
         {
             Assert.AreEqual("Fodbold", _repository.Update(1, new Trophy("Fodbold", 2010)).Competition);
 
-            Trophy ulovligt = new Trophy("Snydetrophy", 1337);
-
-            Assert.ThrowsException<ArgumentOutOfRangeException>(()=>_repository.Update(4,ulovligt));
+            Assert.ThrowsException<ArgumentOutOfRangeException>(()=>_repository.Update(4, new Trophy("Snydetrophy", 1337)));
+            Assert.ThrowsException<ArgumentOutOfRangeException>(() => _repository.Update(2, new Trophy("OL", 1999)));
         }
     }
 }
