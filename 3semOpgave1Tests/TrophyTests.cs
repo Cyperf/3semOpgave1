@@ -39,6 +39,7 @@ namespace _3semOpgave1.Tests
             Assert.ThrowsException<ArgumentOutOfRangeException>(() =>invalidEarlyYearTrophy.ValidateYear());
 
             Assert.ThrowsException<ArgumentOutOfRangeException>(()=> invalidLateYearTrophy.ValidateYear());
+
         }
         [TestMethod()]
         public void ValidateAllTest()

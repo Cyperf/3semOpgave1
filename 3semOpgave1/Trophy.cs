@@ -12,7 +12,7 @@ namespace _3semOpgave1
 {
     public class Trophy
     {
-        public int Id { get; private set; }
+        public int Id { get; set; }
         public string Competition { get; set; }
         public int Year { get; set; }
 
@@ -20,11 +20,6 @@ namespace _3semOpgave1
         {
             Competition = competition;
             Year = year;
-        }
-
-        public void SetId(int id)
-        {
-            Id = id;
         }
 
         public bool ValidateCompetition()
@@ -60,12 +55,5 @@ namespace _3semOpgave1
         {
             return $"This Trophy was won in {Year}, in the competition {Competition}. It's unique Id is {Id}";
         }
-
-        /*
-
-        Tilføj en unit test til dit projekt.
-
-        Din unit test skal have et godt “Code Coverage”
-            */
     }
 }
