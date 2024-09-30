@@ -33,39 +33,6 @@ namespace _3semOpgave1
             return result;
         }
 
-        //    public List<Trophy> Get() 
-        //{
-        //    return new List<Trophy>(_list); 
-        //}
-
-        //public List<Trophy> Get(int year)
-        //{ 
-        //    List<Trophy> trophiesByYear = new List<Trophy>();
-
-        //    foreach(Trophy trophy in _list)
-        //    {
-        //        if (trophy.Year == year)
-        //        {
-        //            trophiesByYear.Add(trophy);
-        //        }
-        //    }
-        //    return trophiesByYear;
-        //}
-
-        //public List<Trophy> Get(string competition)
-        //{
-        //    List<Trophy> trophiesByComp = new List<Trophy>();
-
-        //    foreach (Trophy trophy in _list)
-        //    {
-        //        if (trophy.Competition == competition)
-        //        {
-        //            trophiesByComp.Add(trophy);
-        //        }
-        //    }
-        //    return trophiesByComp;
-        //}
-
         public Trophy? GetById(int id)
         {
             return _list.FirstOrDefault(t => t.Id == id);
